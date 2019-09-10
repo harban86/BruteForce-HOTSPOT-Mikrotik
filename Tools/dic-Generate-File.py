@@ -16,11 +16,15 @@ def password(file_name,start,finish):
        count = count + 1
 
 def users(file_name):
-    alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','n','o','p','q','r','s','t','u','v','w','x','y','z']
-    for third in alphabet:    
-        for second in alphabet:
-            for last in alphabet:
-                write_file(file_name,str('1h'+third+second+last))
+    alphabet = ['0','1','2','3','4','5','6','7','8','9']
+   for first in alphabet:  
+      for second in alphabet:
+          for third in alphabet:
+              for fourth in alphabet:
+                  for fifth in alphabet:
+                      for sixth in alphabet:
+                          for last in alphabet:                        
+                write_file(file_name,str('g'+first+second+third+fourth+fifth+sixth+last))
 
 def run():
     # password('passwords.js',100,1000)
